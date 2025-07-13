@@ -1,34 +1,147 @@
 <!DOCTYPE html>
-<script>
-	//Hello!
-</script>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 <body>
-<h1>Alex Passanante's website</h1>
-<p>Here is a link to my 
-<a href="https://github.com/apassana">Github</a></p>
-<h2>Projects</h2>
-<a href="https://github.com/apassana/cache-simulator">Cache Simulator</a>
-<br>
-<a href="https://github.com/Ellison-Schilling/RabbitInTheMaze">Rabbit in Maze game</a>
-<br>
-<h2>Skills</h2>
-<h3>Programming Languages from most familiarity to least:</h3>
-<p>Python
-<br>C
-<br>C#
-<br>C++
-<br>SML
-<br>Everything else</p>
-<h3>Programming tools</h3>
-<p>Vim
-<br>Git
-<br>Unity</p>
-<h3>Misc</h3>
-<p>climb V3 and 5.10b
-<br>Volforce 18.362
-<br>Conversational Japanese
-<br>General handiness</p>
-<img src="dskelly.gif" alt="Dancing Skelly" width="100" height="100">
+  <header class="top-header">
+    <img src="images/profile.jpg" alt="Profile picture of Alexander Passanante" class="profile-pic" />
+    <h1>Alexander Passanante</h1>
+    <p class="tagline">Creative minimalist developer</p>
+    <nav class="nav">
+      <a href="#intro">Intro</a>
+      <a href="#tech">Technologies</a>
+      <a href="#work">Work</a>
+      <a href="#education">Education</a>
+<!--
+      <a href="#certs">Certifications</a>
+      <a href="#hobbies">Hobbies</a>
+	  -->
+	  <a href="resume.pdf" download class="resume-button">Download Resume</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>I am an Air Force veteran and aspiring software engineer with a B.S. in Computer Science and a strong foundation in C,
+Python, and Unix-based systems. I have experience as a team leader with a proven ability to manage logistics, and drive process
+improvements, and I am passionate about learning more about programming and software solutions.</p>
+    </section>
+
+    <section id="tech">
+      <h2>Technologies</h2>
+      <h3>Highlighted</h3>
+      <div class="tech-grid">
+        <div class="tech-item">
+    	  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" />
+          <p>Python</p>
+        </div>
+		<div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C"/>
+		  <p>C</p>
+		</div>
+      </div>
+
+      <h3>Familiar With</h3>
+	  <div class="tech-grid">
+        <div class="tech-item">
+    	  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" alt="SQLite" />
+          <p>SQLite</p>
+        </div>
+		<div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" alt="Flask"/>
+		  <p>Flask</p>
+		</div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="git" />
+          <p>git</p>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg" alt="Docker" />
+          <p>Docker</p>
+        </div>
+		<div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unix/unix-original.svg" alt="Unix" />
+          <p>Unix</p>
+        </div>
+		<div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" />
+          <p>C#</p>
+        </div>
+		<div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+          <p>C++</p>
+        </div>
+		<div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" alt="bash" />
+          <p>bash</p>
+        </div>
+      </div>
+    </section>
+
+	<section id="projects">
+	<h2>Projects</h2>
+	<div class="projects-grid">
+
+		<div class="project-card">
+		<img src="projects/rabbit_project.png" alt="Project 1 screenshot" />
+		<h3>Rabbit in the Maze</h3>
+		<p>A game about exploring a randomly generated maze to find a key and make it back safely to the beginning.</p>
+		<div class="project-links">
+			<a href="https://github.com/Ellison-Schilling/RabbitInTheMaze" target="_blank">GitHub</a>
+		</div>
+		</div>
+
+		<div class="project-card">
+		<img src="projects/cache_project.PNG" alt="Project 2 screenshot" />
+		<h3>Cache Simulator</h3>
+		<p>A Python-based simulator for modeling various cache architectures and analyzing their performance using memory access trace files.</p>
+		<div class="project-links">
+			<a href="https://github.com/apassana/cache-simulator" target="_blank">GitHub</a>
+		</div>
+		</div>
+
+	</div>
+	</section>
+
+
+    <section id="work">
+      <h2>Work Experience</h2>
+	  <p><strong>AI integration Intern</strong> - Advantech Japan (2024)<br/>Created documentation and workflows for implementing and training computer vision AI models on proprietary software.</p>
+      <p><strong>Aircrew Flight Equipment Supervisor</strong> - USAF (2020-2021)<br/>Oversaw daily shop activites, lead programs for tool calibration, vehicle maintanence, supply, and hazardous materials. 
+		Trained and supevised Airmen to properly perform daily duties of inspection and maintanence of life saving flight equipment and survival equipment.</p>
+	  <p><strong>Aircrew Flight Equipment Journeyman</strong> - USAF (2016-2020)<br/>Performed daily shop activites, performed inspection and maintanence of life saving flight equipment and survival equipment.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>B.S. Computer Science</strong> - University of Oregon (2022-2025)
+		<ul>
+		  <li>Major: Computer Science</li>
+		  <li>Minor: Japanese</li>
+		</ul>
+	  </p>
+	  <p><strong>Associates of Arts Oregon Transfer (AAOT) degree </strong> - Chemeketa Community College (2013-2015) (2021-2022) </p>
+	  <p><strong>A.A.S. Aircrew Safety Systems </strong> - Community College of the Air Force (2016-2021) </p>
+    </section>
+<!--
+    <section id="certs">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Google UX Design Certificate</li>
+        <li>freeCodeCamp Responsive Web Design</li>
+      </ul>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies & Talents</h2>
+      <p>📸 Photography, 🎨 Digital Illustration, 🎵 Music Production, 🏃 Running</p>
+    </section>
+	-->
+  </main>
 </body>
 </html>
